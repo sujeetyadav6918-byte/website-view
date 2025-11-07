@@ -100,6 +100,13 @@ import Faqandsupport from "./components/Faqandsuppoer/Faqandsuppoer";
 import Layout from "./components/Layout/Layout";
 import OncologyProductsPage from "./components/Therapeutic/Oncology";
 import MedicinesDirectory from "./components/Therapeutic/medicineDirectory";
+import HematologyProductsPage from "./components/Therapeutic/Hematology";
+import RarediseaseProductsPage from "./components/Therapeutic/Raredisease";
+import NaurologyProductsPage from "./components/Therapeutic/Neurology";
+import AboutPage2 from "./components/Aboutus2/Aboutus2";
+import ContactSection from "./components/Contactus/Contactus";
+import PharmaNews from "./components/Blog/Blog";
+
 
 
 
@@ -128,9 +135,36 @@ const App = () => {
           element:<OncologyProductsPage/>
         },
         {
+          path:"/Hematology",
+          element:<HematologyProductsPage/>
+        },
+        {
+          path:"/RAREDISEASE",
+          element:<RarediseaseProductsPage/>
+        },
+        {
+          path:"/NEUROLOGY",
+          element:<NaurologyProductsPage/>
+
+        },
+        {
           path:"fullmedicine",
           element:<MedicinesDirectory/>
+        },
+        {
+          path:"/Aboutus2",
+          element:<AboutPage2/>
+
+        },
+        {
+          path:"/Contactus",
+          element:<ContactSection/>
+        },
+        {
+          path:"/Blog",
+          element:<PharmaNews/>
         }
+
        
       ],
     },

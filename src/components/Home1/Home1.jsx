@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar';
+// import Navbar from '../Navbar/Navbar';
 import HeroSection from '../HeroSection/HeroSection'
 // import HeroSection from "../HeroSection/HeroSection";
 // import { Home } from 'lucide-react'
@@ -10,7 +10,7 @@ import ImportantDrugs from "../ImportantDrugs/ImportantDrugs";
 import ImportedProducts from "../medicineslide/medicineslide";
 import LeadershipSection from "../Team/team";
 import ContactSection from "../Contactus/Contactus";
-import FooterSection from "../footersection/Footersection";
+// import FooterSection from "../footersection/Footersection";
 // import ImageSlider from "../HeroSection/HeroSection";
 // import { createBrowserRouter,RouterProvider } from "react-router-dom";
  

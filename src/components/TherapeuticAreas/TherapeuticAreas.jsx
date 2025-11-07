@@ -16,17 +16,17 @@ const therapeuticAreas = [
   {
     name: "Hematology",
     image: "src/assets/website.imge/hematology.jpeg",
-    link: "HEMATOLOGY.html",
+    link: "Hematology",
   },
   {
     name: "Neurology",
     image: "src/assets/website.imge/neurology.jpeg",
-    link: "NEUROLOGY.html",
+    link: "NEUROLOGY",
   },
   {
     name: "Rare Disease",
     image: "src/assets/website.imge/rare.jpeg",
-    link: "RAREDISEASE.html",
+    link: "RAREDISEASE",
   },
 ];
 

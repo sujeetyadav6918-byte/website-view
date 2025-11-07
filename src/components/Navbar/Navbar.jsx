@@ -587,6 +587,7 @@ const megaMenu = [
       { name: "Portrazza (Necitumumab)", link: "#" },
       { name: "Cytalux (Pofalacanine)", link: "#" },
       { name: "Pylarify (Piflufolastat F18)", link: "#" },
+
     ],
   },
   {
@@ -668,9 +669,9 @@ const Navbar = () => {
               </div>
             )}
           </li>
-          <li><a href="#" className="hover:text-blue-600">BLOG</a></li>
+          <li><a href="Blog" className="hover:text-blue-600">BLOG</a></li>
           <li><Link to="faqsupport" className="hover:text-blue-600">FAQ & SUPPORT</Link></li>
-          <li><a href="#" className="hover:text-blue-600">CONTACT US</a></li>
+          <li><a href="Contactus" className="hover:text-blue-600">CONTACT US</a></li>
         </ul>
         {/* Hamburger for Mobile */}
         <button className="md:hidden cursor-pointer" onClick={() => setOpen((o) => !o)}>
@@ -706,9 +707,9 @@ const Navbar = () => {
               ))}
             </div>
           </details>
-          <a href="#" className="font-semibold pb-2 border-b">BLOG</a>
+          <a href="Blog" className="font-semibold pb-2 border-b">BLOG</a>
           <a href="faqsupport" className="font-semibold pb-2 border-b">FAQ & SUPPORT</a>
-          <a href="#" className="font-semibold">CONTACT US</a>
+          <a href="Contactus" className="font-semibold">CONTACT US</a>
         </div>
       )}
     </div>

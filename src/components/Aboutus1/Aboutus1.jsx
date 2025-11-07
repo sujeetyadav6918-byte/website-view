@@ -17,14 +17,14 @@ export default function AboutContactPage() {
       {/* Banner */}
       <div className="relative w-full min-h-[350px] flex items-center about-banner justify-center overflow-hidden z-10" data-aos="fade-down">
         <img src="src/assets/website.imge/image6.jpg" alt="About Us Banner"
-             className="w-full max-h-[210px] object-cover brightness-75 blur-[1px] opacity-90"/>
+             className="w-full max-h-[350px] object-cover brightness-75 blur-[1px] opacity-90"/>
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl md:text-5xl font-extrabold bg-[rgba(25,33,60,0.23)] rounded-xl px-12 py-4 shadow-lg tracking-widest">ABOUT US</h1>
         </div>
       </div>
 
       {/* Main content */}
-      <main className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg mt-[-80px] relative pb-6 px-6 pt-4" data-aos="fade-up">
+      <main className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg mt-[-80px] relative pb-6 px-6 pt-16" data-aos="fade-up">
         <h2 className="about-title text-3xl text-blue-900 font-bold mt-9 mb-2">Named Patient Program | Managed Access Program</h2>
         <div className="about-subtitle text-lg text-blue-700 font-medium mt-1">Rare Pharma Supply is a group of highly qualified professionals of pharmaceutical industry.</div>
         <p className="about-text text-base leading-relaxed mt-5">

@@ -175,10 +175,11 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 // Replace these with your actual images if local
-const imageMain = "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80";
-const imageOverlay = "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80";
+const imageMain = " src/assets/website.imge/image5.jpg";
+const imageOverlay = "src/assets/website.imge/Oncology-1030x579.jpg ";
 
 export default function GiftCardSection() {
   useEffect(() => {
@@ -202,7 +203,7 @@ export default function GiftCardSection() {
             <h2 className="text-3xl md:text-4xl font-serif font-medium mb-5">  Pharmaceutical Care For <br />You and Your Family</h2>
             <p className="text-gray-800 mb-6">
              We provide expert guidance for importing medicines legally and ethically for individual patient use.   </p>
-           <a href="/"> <button className="bg-black text-white px-6 py-3 rounded shadow hover:bg-gray-900 font-serif transition  cursor-pointer"> ABOUT US</button> </a> 
+           <Link to="/Aboutus2" className="bg-black text-white px-6 py-3 rounded shadow hover:bg-gray-900 font-serif transition  cursor-pointer"> ABOUT US </Link> 
           </div>
         </div>
 

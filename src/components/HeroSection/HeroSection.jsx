@@ -176,12 +176,12 @@ const Hero = () => (
   >
     <CenterImage />
     <motion.div
-      className="absolute left-1/2 -translate-x-1/2 z-40 top-40 sm:top-64 bg-zinc-900/65 rounded-xl shadow-lg px-8 py-10"
+      className="absolute left-1/2 -translate-x-1/2 z-40 top-130 sm:top-120 px-8 py-10"  
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h1 className="text-2xl md:text-4xl font-extrabold text-white text-center pb-3">
+      <h1 className="text-2xl md:text-4xl font-extrabold text-white text-center ">
         <Typewriter
           words={[
             "WELCOME TO RAREPHARMASUPPLY.",
@@ -189,16 +189,16 @@ const Hero = () => (
             // "SpaceX & Beyond: Live Data & Schedules."
           ]}
           loop={0}
-          cursor
+          // cursor
           cursorStyle="|"
           typeSpeed={65}
           deleteSpeed={30}
           delaySpeed={1800}
         />
       </h1>
-      <p className="max-w-xl mx-auto text-zinc-200 text-lg text-center pt-3 opacity-80">
+      <p className="max-w-xl mx-auto  text-lg text-center pt-3 opacity-0">
         {/* Experience smooth parallax, real motion, and interactive launch data powered by React and Framer Motion. */}
-        Need an Unapproved or Unavailable Medicine in India?
+        {/* Need an Unapproved or Unavailable Medicine in India? */}
       </p>
     </motion.div>
     <ParallaxImages />
@@ -294,6 +294,17 @@ function ParallaxImg({ className, alt, src, start, end }) {
   );
 }
 
+const SCHEDULE_DATA = [
+  { title: "Oncology", link: "/oncology", date: "CLICKE HERE",},
+  { title: "Hematology", link: "/hematology" },
+  { title: "Neurology", link: "/neurology" },
+  { title: "Immunology", link: "/immunology" },
+  { title: "Nephrology", link: "/nephrology" },
+  { title: "Rare Disease", link: "/rare-disease" },
+  { title: "Gastroenterology", link: "/gastro" },
+  { title: "Cardio", link: "/cardio" },
+];
+
 const Schedule = () => (
   <section id="launch-schedule" className="mx-auto max-w-5xl px-4 py-48 text-white">
     <motion.h1
@@ -302,26 +313,15 @@ const Schedule = () => (
       transition={{ ease: "easeInOut", duration: 0.75 }}
       className="mb-20 text-4xl font-black uppercase text-zinc-50"
     >
-      We Can help
-      
+      We Can Help
     </motion.h1>
-    {[
-      //  { title: "Oncology", date: "Dec 9th", location: "Florida" },
-      { title: "Oncology",},
-      { title: "Hematology" },
-      { title: "Neurology", },
-      { title: "Immunology", },
-      { title: "Nephrology",  },
-      { title: "Rare Disease", },
-      { title: "Gastroentrolog"},
-      { title: "Cardio " },
-    ].map((sched, i) => (
+    {SCHEDULE_DATA.map((sched, i) => (
       <ScheduleItem key={sched.title + i} {...sched} />
     ))}
   </section>
 );
 
-const ScheduleItem = ({ title, date, location }) => (
+const ScheduleItem = ({ title, link, date, location }) => (
   <motion.div
     initial={{ y: 48, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
@@ -329,16 +329,24 @@ const ScheduleItem = ({ title, date, location }) => (
     className="mb-9 flex items-center justify-between border-b border-zinc-800 px-3 pb-9"
   >
     <div>
-      <p className="mb-1.5 text-xl text-zinc-50">{title}</p>
-      <p className="text-sm uppercase text-zinc-500">{date}</p>
+      <p className="mb-1.5 text-xl text-zinc-50">
+        <a
+          href={link}
+          className="hover:text-blue-400  underline-offset-2 transition"
+        >
+          {title}
+        </a>
+      </p>
+      {date && <p className="text-sm uppercase text-zinc-500">{date}</p>}
     </div>
-    <div className="flex items-center gap-1.5 text-end text-sm uppercase text-zinc-500">
-      <p>{location}</p>
-      <FiMapPin />
-    </div>
+    {location &&
+      <div className="flex items-center gap-1.5 text-end text-sm uppercase text-zinc-500">
+        <p>{location}</p>
+        <FiMapPin />
+      </div>
+    }
   </motion.div>
 );
-
 
 
 
